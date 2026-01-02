@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: left;
+    padding: 80px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.hero p {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    color: #666;
+    line-height: 1.6;
+}
