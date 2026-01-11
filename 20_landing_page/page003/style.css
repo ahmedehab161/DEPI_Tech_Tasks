@@ -8,3 +8,17 @@
 body {
     background: #ffffff;
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+.hero .text{
+    width: 290px;
+    float: left;
+}
