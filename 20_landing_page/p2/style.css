@@ -18,7 +18,24 @@ body {
 
 .hero {
     text-align: left;
-    padding: 60px 20px;
+    padding: 4% 2%;
+    float: left;
+}
+
+.hero-gallery {
+    margin-left: 4%;
+    float: left;
+}
+
+.hero-gallery 
+.card 
+img{
+    width: 408px;
+    height: 480px;
+}
+
+.hero-image-2 {
+    margin-top: 40%;
 }
 
 .btn {
@@ -39,13 +56,13 @@ body {
     margin: 20px 0 40px 0;
 }
 .gallery {
-    margin: 40px;
+    margin: 3%;
 }
 .card {
     width: 412px;
     height: 100%;
-    margin: 0px 5px;
-    padding-bottom: 30px;
+    margin: 0px 30px;
+    padding-bottom: 3%;
     float: left;
 }
 
@@ -61,4 +78,14 @@ body {
     height: 100%;
     border-radius: 16px;
     display: block;
+}
+
+@media screen and (max-width: 1400px) {
+    .card {
+        width: 360px;
+    }
+
+    .hero-gallery {
+        margin-left: 1%;
+    }
 }
