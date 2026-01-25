@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+.explore-section {
+    display: flex;
+    width: 1200px;
+    height: 550px;
+    margin: 50px auto;
+}
+
+.image-box {
+    width: 40%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-box {
+    width: 42%;
+    padding: 10px 50px 0px 50px;
+    margin-left: 12%;
+}
+
+.content-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content-box .intro {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.content-box button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+/* Steps */
+.steps .step {
+    margin-bottom: 30px;
+}
+
+.steps span {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.steps p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
