@@ -2,5 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
+body {
+    background: #f0f0f0;
+}
+
+.Headline-box{
+    font-size: 28px;
+    font-weight: bold;
+    width: 30%;
+    margin: 0% 0% 4% 3%;
+}
+
+.content-box {
+    margin-left: 3%;
+    width: 320px;
+}
+
+.image-box {
+    width: 500px;
+}
+
+.image-box img {
+    width: 400px;
+    height: 345px;
+    object-fit: cover;
+}
+
+
+.steps span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    display: block;
+    margin-bottom: 1%;
+}
+
+.steps p {
+    font-size: 20px;
+    color: #555;
+}
