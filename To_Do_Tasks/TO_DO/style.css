@@ -1,0 +1,152 @@
+:root {
+    --glass: rgba(255, 255, 255, .15);
+    --text: #fff;
+}
+
+body.light {
+    --scene: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+}
+
+body.dark {
+    --scene: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    color: var(--text);
+    overflow: hidden;
+}
+
+/* Scene */
+.scene {
+    position: fixed;
+    inset: 0;
+    background: var(--scene) center / cover no-repeat;
+    filter: brightness(.85);
+}
+
+/* Glass UI */
+header,
+.timer,
+.todo-box,
+.todo-btn {
+    backdrop-filter: blur(12px);
+    background: var(--glass);
+    border-radius: 14px;
+}
+
+/* Header */
+.top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Timer */
+.timer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.timer span {
+    font-size: 48px;
+    display: block;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Todo Button */
+.todo-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Todo Overlay */
+.todo-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-overlay.active {
+    display: flex;
+}
+
+.todo-box {
+    width: 320px;
+    padding: 20px;
+}
+
+.todo-box h2 {
+    text-align: center;
+}
+
+.add {
+    display: flex;
+    gap: 10px;
+}
+
+.add input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+.add button {
+    padding: 8px 12px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.back {
+    margin-top: 15px;
+    width: 100%;
+}

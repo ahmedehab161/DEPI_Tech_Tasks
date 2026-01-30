@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+  <!-- Scene -->
+  <div class="scene"></div>
+
+  <!-- Top UI -->
+  <header class="top">
+    <h1><i class='bx bx-play'></i> POMODORO ♪</h1>
+    <button id="modeBtn"><i class='bx bx-moon'></i></button>
+  </header>
+
+  <!-- Timer -->
+  <div class="timer">
+    <span id="time">25:00</span>
+    <div class="controls">
+      <button id="start"><i class='bx bx-play'></i></button>
+      <button id="reset"><i class='bx bx-reset'></i></button>
+    </div>
+  </div>
+
+  <!-- ToDo Button -->
+  <button class="todo-btn" id="openTodo">To-Do List</button>
+
+  <!-- ToDo Overlay -->
+  <div class="todo-overlay" id="todo">
+    <div class="todo-box">
+      <h2>To-Do List</h2>
+
+      <div class="add">
+        <input id="todoInput" placeholder="Add task">
+        <button id="addTodo">+</button>
+      </div>
+
+      <ul id="todoList"></ul>
+
+      <button class="back" id="closeTodo">BACK</button>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
