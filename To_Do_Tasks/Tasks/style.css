@@ -1,0 +1,172 @@
+:root {
+    --bg: #f6f6f6;
+    --card: #ffffff;
+    --text: #111;
+    --muted: #777;
+    --border: #e5e5e5;
+    --accent: #000;
+}
+
+body.dark {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #fff;
+    --muted: #aaa;
+    --border: #2a2a2a;
+    --accent: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: var(--card);
+    border-right: 1px solid var(--border);
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+nav button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 6px;
+    border: none;
+    background: none;
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button.active {
+    background: var(--bg);
+    font-weight: 600;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 10px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+}
+
+.add-task button {
+    padding: 10px 16px;
+    border: none;
+    background: var(--accent);
+    color: var(--bg);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filters {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.filters span {
+    cursor: pointer;
+}
+
+.filters .active {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* Tasks */
+.tasks {
+    max-width: 600px;
+}
+
+.task {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task.done span {
+    text-decoration: line-through;
+    color: var(--muted);
+}
+
+.task .left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Empty State */
+.empty {
+    display: none;
+    text-align: center;
+    margin-top: 80px;
+    color: var(--muted);
+}
+
+.illustration {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: var(--muted);
+}

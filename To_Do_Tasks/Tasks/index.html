@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Tasks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="https://i.pravatar.cc/100" />
+      <div>
+        <strong>Ahmed Ehab</strong><br/>
+        <small>AhmedEhab@gmail.com</small>
+      </div>
+    </div>
+
+    <nav>
+      <button class="active"><i class='bx bx-task'></i> My Tasks</button>
+      <button><i class='bx bx-cog'></i> Settings</button>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header>
+      <h1>My Tasks</h1>
+      <i class='bx bx-moon theme-toggle'></i>
+    </header>
+
+    <div class="add-task">
+      <input id="taskInput" placeholder="Type your task here..." />
+      <button id="addBtn">+ Add</button>
+    </div>
+
+    <div class="filters">
+      <span class="active" data-filter="all">All</span> |
+      <span data-filter="active">Active</span> |
+      <span data-filter="done">Completed</span>
+    </div>
+
+    <div id="tasks" class="tasks"></div>
+
+    <!-- Empty State -->
+    <div id="empty" class="empty">
+      <div class="illustration">
+        <img src = "./undraw_check-boxes_x5fg.svg" width = "250px" >
+      </div>
+
+      <p>
+        Empty as my motivation on Monday 😴 <br>
+        Let's start adding stuff!
+      </p>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
